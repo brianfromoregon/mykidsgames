@@ -1,0 +1,20 @@
+explode_sound	explo.wav
+
+explo_map			GasExplosion-bb-tr.gif	0	0	96	96	0	0
+
+explo1		p	0	explo_map	1	-	0	0	32	32
+explo2		p	0	explo_map	2	-	0	0	32	32
+explo3		p	0	explo_map	3	-	0	0	32	32
+explo4		p	0	explo_map	4	-	0	0	32	32
+explo5		p	0	explo_map	5	-	0	0	32	32
+explo6		p	0	explo_map	6	-	0	0	32	32
+explo7		p	0	explo_map	7	-	0	0	32	32
+explo8		p	0	explo_map	8	-	0	0	32	32
+explo9		p	0	explo_map	9	-	0	0	32	32
+explo10		p	0	explo_map	10	-	0	0	32	32
+explo11		p	0	explo_map	11	-	0	0	32	32
+explo12		p	0	explo_map	12	-	0	0	32	32
+explo13		p	0	explo_map	13	-	0	0	32	32
+explo14		p	0	explo_map	14	-	0	0	32	32
+
+explo		explo1;explo2;explo3;explo4;explo5;explo6;explo7;explo8;explo9;explo10;explo11;explo12;explo13;explo14	0.45
