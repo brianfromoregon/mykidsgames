@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jnlp codebase="http://mykidsgames.googlecode.com/svn/bin/" href="launch.jnlp" spec="1.0+">
+    <information>
+        <title>mykidsgames</title>
+        <vendor>brian</vendor>
+        <homepage href=""/>
+        <description>mykidsgames</description>
+        <description kind="short">mykidsgames</description>
+
+
+    <offline-allowed/>
+</information>
+
+    <resources>
+<j2se version="1.5+"/>
+<jar eager="true" href="mykidsgames.jar" main="true"/>
+
+
+    <jar href="lib/google-collect-1.0.jar"/>
+<jar href="lib/jgame-jre.jar"/>
+</resources>
+    <application-desc main-class="net.bcharris.Main">
+
+    </application-desc>
+</jnlp>
