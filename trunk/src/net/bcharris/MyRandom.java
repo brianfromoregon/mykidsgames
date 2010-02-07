@@ -31,7 +31,9 @@ public class MyRandom {
         LOWER_LETTERS = llb.build();
         UPPER_LETTERS = ulb.build();
         NUMBERS = nb.build();
-        COLOR_CYCLE = Iterators.cycle(JGColor.blue, JGColor.cyan, JGColor.green, JGColor.magenta, JGColor.orange, JGColor.pink, JGColor.red, JGColor.white, JGColor.yellow);
+        List<JGColor> colors = Lists.newArrayList(JGColor.blue, JGColor.cyan, JGColor.green, JGColor.magenta, JGColor.orange, JGColor.pink, JGColor.red, JGColor.white, JGColor.yellow);
+        shuffle(colors);
+        COLOR_CYCLE = Iterators.cycle(colors);
         List<Character> allChars = Lists.newArrayList();
         allChars.addAll(LOWER_LETTERS);
         allChars.addAll(UPPER_LETTERS);
