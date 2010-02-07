@@ -10,13 +10,13 @@ import jgame.JGObject;
 import jgame.JGPoint;
 import jgame.platform.JGEngine;
 
-public class Game extends JGEngine {
+public class BounceGame extends JGEngine {
 
-    public Game() {
+    public BounceGame() {
         initEngineApplet();
     }
 
-    public Game(JGPoint size) {
+    public BounceGame(JGPoint size) {
         initEngine(size.x, size.y);
     }
 
