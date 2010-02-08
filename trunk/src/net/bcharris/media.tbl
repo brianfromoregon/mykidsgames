@@ -1,4 +1,5 @@
 explode_sound	explo.wav
+scissors_sound	scissors.wav
 
 explo_map			GasExplosion-bb-tr.gif	0	0	96	96	0	0
 

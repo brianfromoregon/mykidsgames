@@ -1,4 +1,12 @@
 -------
+-- 2 --
+-------
+
+* Fixed calculation for when the character should bounce off the right
+  side or bottom.
+* Added Dolch word game.
+
+-------
 -- 1 --
 -------
 
