@@ -85,7 +85,7 @@ public abstract class BounceGame implements Game {
                 nextKeyCode = bouncer.nextKeyCode();
                 if (nextKeyCode == null) {
                     engine.playAudio("explode_sound");
-                    new JGObject("explo", true, x, y, 0, "explo", 0, 0, 32);
+                    new JGObject("explo", true, x+bouncer.width()/2d-42, y+bouncer.height()/2d-42, 0, "explo", 0, 0, 32);
                     remove();
                     new MyBouncer(nextBouncer());
                 } else {
