@@ -67,7 +67,7 @@ public class WordGame extends BounceGame {
                 String c = Character.toString(myChars[i]);
                 if (i + 1 == charPos) {
                     JGColor color = fadedColor();
-                    engine.drawString(c, currX, yPos + wobble(), -1, myFont, color);
+                    engine.drawString(c, currX, yPos - wobble(), -1, myFont, color);
                 } else {
                     engine.drawString(c, currX, yPos, -1, myFont, myColor);
                 }
@@ -87,7 +87,7 @@ public class WordGame extends BounceGame {
 
         // Number from -1 to 1 indicating the vertical offset (current level of wobbliness).
         private double wobble() {
-            return Math.cos(Math.PI + (2 * Math.PI * wobbleStep) / wobbleSteps) * wobbleRadius;
+            return Math.sin((2 * Math.PI * wobbleStep) / wobbleSteps) * wobbleRadius;
         }
 
         // Number from 0 to 1
