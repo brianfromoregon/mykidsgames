@@ -10,6 +10,16 @@
 <project name="mykidsgames" default="default" basedir=".">
     <description>Builds, tests, and runs the project mykidsgames.</description>
     <import file="nbproject/build-impl.xml"/>
+    <target name="one-jar" depends="jar">
+        <jar jarfile="dist/all.jar">
+            <manifest>
+                <attribute name="Main-Class" value="net.bcharris.Main"/>
+            </manifest>
+            <zipfileset src="dist/mykidsgames.jar" includes="**/*"/>
+            <zipfileset src="dist/lib/google-collect-1.0.jar" includes="**/*"/>
+            <zipfileset src="dist/lib/jgame-jre.jar" includes="**/*"/>
+        </jar>
+    </target>
     <!--
 
     There exist several targets which are by default empty and which can be 
