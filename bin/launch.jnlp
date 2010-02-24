@@ -12,7 +12,7 @@
 </information>
 
     <resources>
-<j2se version="1.6+"/>
+<j2se version="1.5+"/>
 <jar eager="true" href="mykidsgames.jar" main="true"/>
 
 
