@@ -21,8 +21,9 @@ public class WordGame extends BounceGame {
         final double[] widths;
         final JGFont myFont = new JGFont("serif", JGFont.BOLD, 50);
         final JGColor myColor = MyRandom.COLOR_CYCLE.next();
-        final JGColor fadeColor = MyRandom.COLOR_CYCLE.next();
-        final int wobbleRadius = 7;
+        final JGColor fadeColor1 = MyRandom.COLOR_CYCLE.next();
+        final JGColor fadeColor2 = MyRandom.COLOR_CYCLE.next();
+        final int wobbleRadius = 10;
         final int wobbleSteps = 50, fadeSteps = 70;
         final int charGap = 1;
         double width, height;
@@ -93,10 +94,10 @@ public class WordGame extends BounceGame {
         // Number from 0 to 1
         private JGColor fadedColor() {
             double zeroToOne = (Math.cos(Math.PI + (2 * Math.PI * fadeStep) / fadeSteps) + 1) / 2d;
-            int rd = (int) ((fadeColor.r - myColor.r) * zeroToOne);
-            int gd = (int) ((fadeColor.g - myColor.g) * zeroToOne);
-            int bd = (int) ((fadeColor.b - myColor.b) * zeroToOne);
-            return new JGColor(myColor.r + rd, myColor.g + gd, myColor.b + bd);
+            int rd = (int) ((fadeColor1.r - fadeColor2.r) * zeroToOne);
+            int gd = (int) ((fadeColor1.g - fadeColor2.g) * zeroToOne);
+            int bd = (int) ((fadeColor1.b - fadeColor2.b) * zeroToOne);
+            return new JGColor(fadeColor2.r + rd, fadeColor2.g + gd, fadeColor2.b + bd);
         }
 
         private void step() {
